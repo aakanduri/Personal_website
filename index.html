@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aayush Kanduri | Bedroom Portfolio</title>
+    <meta
+      name="description"
+      content="A playful 3D bedroom portfolio with clickable objects and camera controls."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;900&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="scene-shell">
+        <div class="scene-hud top-left">
+          <p class="eyebrow">Bedroom.exe</p>
+          <h1>Aayush Kanduri</h1>
+          <p class="intro-copy">
+            Spin the room and click glowing objects.
+          </p>
+        </div>
+
+        <div class="scene-hud bottom-left">
+          <p class="eyebrow">Objects</p>
+          <div class="legend">
+            <button class="legend-chip" data-section="about">Bed</button>
+            <button class="legend-chip" data-section="experience">Work</button>
+            <button class="legend-chip" data-section="languages">Computer</button>
+            <button class="legend-chip" data-section="interests">Dumbbell</button>
+            <button class="legend-chip" data-section="contact">Phone</button>
+          </div>
+        </div>
+
+        <div class="tooltip-badge" id="tooltip-badge" hidden>About Me</div>
+        <canvas id="scene-canvas" aria-label="3D bedroom scene"></canvas>
+
+        <section class="detail-overlay" id="detail-overlay" hidden>
+          <div class="detail-page">
+            <button class="back-button" id="back-button" type="button" aria-label="Go back to bedroom">
+              <span aria-hidden="true">←</span>
+              <span>Back to room</span>
+            </button>
+
+            <div class="detail-copy">
+              <p class="panel-hint panel-hint-top" id="panel-hint">Bed selected</p>
+              <h2 class="detail-title" id="panel-title">ABOUT ME</h2>
+              <img
+                class="detail-image"
+                id="panel-image"
+                src="./headshot.JPG"
+                alt="Aayush Kanduri headshot"
+                hidden
+              />
+              <div class="panel-body" id="panel-body">
+                <p>
+                  I am a student and curious builder who likes thoughtful
+                  design, playful interfaces, and learning by making things.
+                </p>
+                <p>
+                  Replace this with a short intro about what you study, what
+                  matters to you, and what kind of opportunities you want next.
+                </p>
+              </div>
+              <div class="panel-actions" id="panel-actions">
+                <a class="primary-link" href="mailto:akanduri@umich.edu">Email Me</a>
+                <a class="secondary-link" href="https://www.linkedin.com/">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    <script src="https://unpkg.com/three@0.139.2/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.139.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
