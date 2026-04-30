@@ -7,7 +7,7 @@ const content = {
     image: "./headshot.JPG",
     body: [
       "Hi, I’m Aayush.",
-      "I’m a Computer Engineering student at the University of Michigan, also pursuing a minor in Mathematics.",
+      "I’m a Computer Science student at the University of Michigan, also pursuing a minor in Mathematics.",
       "I came into college wanting to build things. Not just write code, but understand how systems work end to end.",
       "Over time, that grew into an interest in full-stack development, systems design, and applied AI. I like taking ideas from a rough concept to something real and usable.",
       "To me, technology is leverage. When it is built well, it can simplify complexity and open up new ways of thinking and working.",
@@ -42,6 +42,12 @@ const content = {
         href: "https://milieuskin.com/",
         logoBg: "#f6f4ef",
         logoFile: "./milieu_logo.png"
+      },
+      {
+        name: "Leidos",
+        href: "https://www.leidos.com/",
+        logoBg: "#f6f4ef",
+        logoFile: "./leidos_logo.png"
       }
     ]
   },
